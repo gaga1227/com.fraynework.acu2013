@@ -1,7 +1,4 @@
-com.fraynework.VCSWS
+com.fraynework.acu2013
 ====================
 
-VCSWS Mobile Hybrid App
-
-*Note:*
-This branch is specifically for slicing review purposes, no interaction included
+6th International Conference on Catholic Educational Leadership 2013
