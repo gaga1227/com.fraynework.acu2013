@@ -20,6 +20,7 @@
 <!-- JS:LIB -->
 <script src="lib/js/zepto.flickable.min.js"></script>
 <script src="lib/js/pageslider.js"></script>
+<script src="lib/js/fastclick.js"></script>
 </head>
 <body>
 <!-- CONTAINER -->
@@ -31,5 +32,10 @@
 <script src="lib/js/app-data.js"></script>
 <script src="lib/js/app-view.js"></script>
 <script src="lib/js/app.js"></script>
+<script>
+	$(function() {
+	    FastClick.attach(document.body);
+	});
+</script>
 </body>
 </html>
