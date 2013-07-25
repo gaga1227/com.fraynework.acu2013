@@ -122,7 +122,6 @@ body {
 			font-family:'Montserrat',sans-serif; font-weight:400; line-height:1em; text-align:center; 
 			/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
 		.pageNav .btnTab:first-child { border-left:none; }
-		.pageNav .btnTab:only-child { width:100%; float:none; clear:both; border-left:none; }
 
 			/* label */
 			.pageNav .navTabs .btnTab .label,
@@ -150,7 +149,18 @@ body {
 		.pageNav .navTabs .btnTab.current					{ background:#00549f; border-color:#00549f; pointer-events:none; }
 		.pageNav .navTabs .btnTab.current .label 			{ color:rgba(255,255,255,1); }
 		.pageNav .navTabs .btnTab.current .sublabel 		{ color:rgba(255,255,255,0.5); }
-
+		
+		/* custom: only-child */
+		.pageNav .btnTab:only-child { 
+			width:100%; padding:0; float:none; clear:both;
+			 border-left:none; text-align:left; }
+			.pageNav .btnTab:only-child .label,
+			.pageNav .btnTab:only-child .sublabel { 
+				display:inline-block;  
+				font-size:18px; line-height:50px }
+			.pageNav .btnTab:only-child .label { 
+				margin:0 10px 0 20px; font-weight:700; }
+		
 
 /* ==========================================================================
    structure - PAGETITLE
@@ -376,6 +386,10 @@ body {
 	.theme-grn.active .fade 	{ color:#1f7f5c; }
 	.theme-gry.active .fade 	{ color:#a7a7a7; }
 	.theme-wht.active .fade 	{ color:#fff; }
+	
+	/* time */
+	.contentView .time 				{ margin:0!important; text-transform:uppercase; }
+	.contentView .time .iconInline 	{ font-size:20px; }
 
 
 /* ==========================================================================
