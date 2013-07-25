@@ -133,14 +133,14 @@ body {
 		.pageNav .navTabs2 .btnTab 						{ width:50%; }
 		.pageNav .navTabs3 .btnTab 						{ width:33.33%; }
 		.pageNav .navTabs4 .btnTab 						{ width:25%; }
-		/* android rounding issue */
-		.android .pageNav .navTabs3 .btnTab 			{ width:34%; }
-		.android .pageNav .navTabs3 .btnTab:first-child,
-		.android .pageNav .navTabs3 .btnTab:last-child 	{ width:33%; }
-		/* iOS rounding issue */
-		.ios .pageNav .navTabs3 .btnTab 				{ width:34.5%; }
+
+		/* iOS/android rounding issue */
+		.ios .pageNav .navTabs3 .btnTab,
+		.android .pageNav .navTabs3 .btnTab				{ width:34.5%; }
 		.ios .pageNav .navTabs3 .btnTab:first-child,
-		.ios .pageNav .navTabs3 .btnTab:last-child 		{ width:33%; }
+		.ios .pageNav .navTabs3 .btnTab:last-child,
+		.android .pageNav .navTabs3 .btnTab:first-child,
+		.android .pageNav .navTabs3 .btnTab:last-child	{ width:33%; }
 
 		/* interaction */
 
