@@ -228,6 +228,14 @@ body {
 		/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
 	.nav .navItem:first-child { border-left:none; }
 
+	/* iOS/android rounding issue */
+	.ios .nav .navItem,
+	.android .nav .navItem				{ width:34.5%; }
+	.ios .nav .navItem:first-child,
+	.ios .nav .navItem:last-child,
+	.android .nav .navItem:first-child,
+	.android .nav .navItem:last-child	{ width:33%; }
+
 		/* icon */
 		.nav .navItem .icon {
 			position:static; width:40px; height:40px; margin:12px auto 8px auto; overflow:hidden;
