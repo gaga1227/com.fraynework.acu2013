@@ -130,13 +130,17 @@ body {
 			.pageNav .navTabs .btnTab .sublabel { color:rgba(255,255,255,0.2); font-size:11px; }
 
 		/* btnTab - extend */
-		.pageNav .navTabs2 .btnTab 					{ width:50%; }
-		.pageNav .navTabs3 .btnTab 					{ width:33.33%; }
-		.pageNav .navTabs4 .btnTab 					{ width:25%; }
+		.pageNav .navTabs2 .btnTab 						{ width:50%; }
+		.pageNav .navTabs3 .btnTab 						{ width:33.33%; }
+		.pageNav .navTabs4 .btnTab 						{ width:25%; }
+		/* android rounding issue */
+		.android .pageNav .navTabs3 .btnTab 			{ width:34%; }
+		.android .pageNav .navTabs3 .btnTab:first-child,
+		.android .pageNav .navTabs3 .btnTab:last-child 	{ width:33%; }
 		/* iOS rounding issue */
-		.ios .pageNav .navTabs3 .btnTab 			{ width:34.5%; }
+		.ios .pageNav .navTabs3 .btnTab 				{ width:34.5%; }
 		.ios .pageNav .navTabs3 .btnTab:first-child,
-		.ios .pageNav .navTabs3 .btnTab:last-child 	{ width:33%; }
+		.ios .pageNav .navTabs3 .btnTab:last-child 		{ width:33%; }
 
 		/* interaction */
 
