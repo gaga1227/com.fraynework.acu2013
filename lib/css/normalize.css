@@ -520,7 +520,9 @@ a, span { -webkit-font-smoothing:antialiased; }
  * 2. prevent users from selecting text within a given element
  * 3. remove tap highlight color
  * 4. remove anchor underline
+ * 5. disable user drag and text selection
  */
 
-* { -webkit-touch-callout:none; /* 1 */ -webkit-user-select:none; /* 2 */ -webkit-tap-highlight-color:rgba(0,0,0,0); /* 3 */ }
+* { -webkit-touch-callout:none; /* 1 */ -webkit-user-select:none; /* 2 */ -webkit-user-drag:element; /* 5 */ }
+a { -webkit-tap-highlight-color:rgba(0,0,0,0); /* 3 */ }
 a, a:hover, a:focus, a:active { text-decoration:none; /* 4 */ }
