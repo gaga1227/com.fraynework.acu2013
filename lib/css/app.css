@@ -116,48 +116,39 @@ body {
 
 		/* btnTab */
 		.pageNav .navTabs .btnTab {
-			display:block; position:relative; width:auto; height:50px; margin:0; padding:10px 0 0 0; overflow:hidden; float:left;
+			display:block; position:absolute; top:0; width:auto; height:50px; margin:0; padding:10px 0 0 0; overflow:hidden;
 			border-left:1px solid #3e3e3e; border-top:1px solid #3e3e3e;
 			white-space:nowrap; text-overflow:ellipsis; text-transform:uppercase;
 			font-family:'Montserrat',sans-serif; font-weight:400; line-height:1em; text-align:center;
 			/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
-		.pageNav .btnTab:first-child { border-left:none; }
+		
+		/* extend - btnTab x 3 */
+		.pageNav .btnTab:first-child 	{ left:0; 		width:33.33%; border-left:none; }
+		.pageNav .btnTab:nth-child(2)	{ left:33.33%; 	width:34%; }
+		.pageNav .btnTab:last-child 	{ right:0; 		width:33.33%; }
 
 			/* label */
 			.pageNav .navTabs .btnTab .label,
 			.pageNav .navTabs .btnTab .sublabel { display:block; }
 			.pageNav .navTabs .btnTab .label 	{ color:rgba(255,255,255,0.3); font-size:15px; }
-			.pageNav .navTabs .btnTab .sublabel { color:rgba(255,255,255,0.2); font-size:11px; }
-
-		/* btnTab - extend */
-		.pageNav .navTabs2 .btnTab 						{ width:50%; }
-		.pageNav .navTabs3 .btnTab 						{ width:33.33%; }
-		.pageNav .navTabs4 .btnTab 						{ width:25%; }
-
-		/* iOS/android rounding issue */
-		.ios .pageNav .navTabs3 .btnTab,
-		.android .pageNav .navTabs3 .btnTab				{ width:34.5%; }
-		.ios .pageNav .navTabs3 .btnTab:first-child,
-		.ios .pageNav .navTabs3 .btnTab:last-child,
-		.android .pageNav .navTabs3 .btnTab:first-child,
-		.android .pageNav .navTabs3 .btnTab:last-child	{ width:33%; }
+			.pageNav .navTabs .btnTab .sublabel { color:rgba(255,255,255,0.2); font-size:11px; }		
 
 		/* interaction */
 
 		/* active */
-		.pageNav .navTabs .btnTab.active 					{ background:#006bcc; border-color:#006bcc; }
+		.pageNav .navTabs .btnTab.active 					{ background:#006bcc; border-color:#006bcc; z-index:4; }
 		.pageNav .navTabs .btnTab.active .label,
 		.pageNav .navTabs .btnTab.active .sublabel 			{ color:rgba(255,255,255,1); }
 
 		/* current */
-		.pageNav .navTabs .btnTab.current					{ background:#00549f; border-color:#00549f; pointer-events:none; }
+		.pageNav .navTabs .btnTab.current					{ background:#00549f; border-color:#00549f; pointer-events:none; z-index:3; }
 		.pageNav .navTabs .btnTab.current .label 			{ color:rgba(255,255,255,1); }
 		.pageNav .navTabs .btnTab.current .sublabel 		{ color:rgba(255,255,255,0.5); }
 
 		/* custom: only-child */
 		.pageNav .btnTab:only-child {
-			width:100%; padding:0; float:none; clear:both;
-			 border-left:none; text-align:left; }
+			position:relative; top:auto; left:auto; right:auto; width:100%; padding:0;
+			border-left:none; text-align:left; }
 			.pageNav .btnTab:only-child .label,
 			.pageNav .btnTab:only-child .sublabel {
 				display:inline-block;
@@ -198,7 +189,7 @@ body {
 /* -------------------------------------------------------------------------- */
 /* container */
 .nav {
-	display:table; position:absolute; bottom:0; left:0; width:100%; height:90px; margin:0; padding:0; overflow:hidden;
+	display:block; position:absolute; bottom:0; left:0; width:100%; height:90px; margin:0; padding:0; overflow:hidden;
 	background:#252525;
 	/*transition*/
 	/*-webkit-transform:translate3d(0,0,0);*/
@@ -223,18 +214,12 @@ body {
 	/* -------------------------------------------------------------------------- */
 	/* menuItem */
 	.nav .navItem {
-		display:inline-block; position:relative; width:33.33%; height:90px; margin:0; padding:0; overflow:hidden;
+		display:block; position:absolute; top:0; height:90px; margin:0; padding:0; overflow:hidden;
 		color:#fff; border-left:1px solid #2a2a2a;
 		/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
-	.nav .navItem:first-child { border-left:none; }
-
-	/* iOS/android rounding issue */
-	.ios .nav .navItem,
-	.android .nav .navItem				{ width:34.5%; }
-	.ios .nav .navItem:first-child,
-	.ios .nav .navItem:last-child,
-	.android .nav .navItem:first-child,
-	.android .nav .navItem:last-child	{ width:33%; }
+	.nav .navItem:first-child 	{ left:0; 		width:33.33%; border-left:none; }
+	.nav .navItem:nth-child(2)	{ left:33.33%; 	width:34%; }
+	.nav .navItem:last-child 	{ right:0; 		width:33.33%; }
 
 		/* icon */
 		.nav .navItem .icon {
@@ -248,7 +233,7 @@ body {
 			font-family:'Montserrat',sans-serif; font-size:13px; font-weight:400; line-height:1em;  }
 
 	/* interaction */
-	.nav .navItem.active { color:#00549f; background:#fff; border-color:#fff; }
+	.nav .navItem.active { color:#00549f; background:#fff; border-color:#fff; z-index:3; }
 	.nav .navItem.active .icon { color:#00549f; }
 
 
