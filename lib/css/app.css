@@ -78,7 +78,7 @@ body {
 	.pageHeader .headerTitle {
 		display:block; width:auto; height:auto; margin:0 50px; padding:0; overflow:hidden;
 		color:#fff; white-space:nowrap; text-overflow:ellipsis;
-		font-family:'Montserrat',sans-serif; font-size:20px; font-weight:400; line-height:50px; text-transform:uppercase; }
+		font-family:'Montserrat',sans-serif; font-size:15px; font-weight:400; line-height:50px; text-transform:capitalize; }
 
 	/* -------------------------------------------------------------------------- */
 	/* headerBtn */
