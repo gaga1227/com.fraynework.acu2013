@@ -512,7 +512,7 @@ a, span { -webkit-font-smoothing:antialiased; }
 
 
 /* ==========================================================================
-   Device App specific 
+   Device App specific
    ========================================================================== */
 
 /*
@@ -523,6 +523,10 @@ a, span { -webkit-font-smoothing:antialiased; }
  * 5. disable user drag and text selection
  */
 
-* { -webkit-touch-callout:none; /* 1 */ -webkit-user-select:none; /* 2 */ -webkit-user-drag:element; /* 5 */ }
-a { -webkit-tap-highlight-color:rgba(0,0,0,0); /* 3 */ }
-a, a:hover, a:focus, a:active { text-decoration:none; /* 4 */ }
+* {
+  -webkit-touch-callout:none; /* 1 */
+  -webkit-user-select:none; /* 2 */
+  -webkit-tap-highlight-color:rgba(0,0,0,0); /* 3 */
+  -webkit-user-drag:element; /* 5 */ }
+a, a:hover, a:focus, a:active {
+  text-decoration:none; /* 4 */ }
