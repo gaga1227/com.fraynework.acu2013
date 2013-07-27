@@ -736,7 +736,6 @@ section,
 /* flickableContainer */
 .flickableContainer {
 	position:absolute; top:0; left:0; height:100%; margin:0; padding:0; overflow:hidden;
-	/*backface-visibility*/-webkit-backface-visibility:hidden; backface-visibility:hidden;
 	/*width:[vp * segNum]; by JS*/ }
 
 	/* flickableItem  */
