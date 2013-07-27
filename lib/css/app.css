@@ -121,7 +121,7 @@ body {
 			white-space:nowrap; text-overflow:ellipsis; text-transform:uppercase;
 			font-family:'Montserrat',sans-serif; font-weight:400; line-height:1em; text-align:center;
 			/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
-		
+
 		/* extend - btnTab x 3 */
 		.pageNav .btnTab:first-child 	{ left:0; 		width:33.33%; border-left:none; }
 		.pageNav .btnTab:nth-child(2)	{ left:33.33%; 	width:34%; }
@@ -131,7 +131,7 @@ body {
 			.pageNav .navTabs .btnTab .label,
 			.pageNav .navTabs .btnTab .sublabel { display:block; }
 			.pageNav .navTabs .btnTab .label 	{ color:rgba(255,255,255,0.3); font-size:15px; }
-			.pageNav .navTabs .btnTab .sublabel { color:rgba(255,255,255,0.2); font-size:11px; }		
+			.pageNav .navTabs .btnTab .sublabel { color:rgba(255,255,255,0.2); font-size:11px; }
 
 		/* interaction */
 
@@ -511,13 +511,13 @@ body {
 .item.theme-wht.active 	{ background:#00549f; border-color:#00549f; }
 
 /* activated */
-.item.activated { 
+.item.activated {
 	background:#fff; }
 	/* default */
 	.item .extra { overflow:hidden; display:none; }
 	.item.activated .extra { display:block; }
 	/* ios */
-	.ios .item .extra { 
+	.ios .item .extra {
 		display:block; overflow:hidden;
 		opacity:0; max-height:0;
 		/*transition*/
@@ -526,7 +526,7 @@ body {
 		-moz-transition:max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 		-o-transition:max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 		transition:max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; }
-	.ios .item.activated .extra { 
+	.ios .item.activated .extra {
 		opacity:1; max-height:10000px; }
 
 
@@ -618,8 +618,8 @@ section,
 /* ==========================================================================
    common - BG
    ========================================================================== */
-   
-   
+
+
 /* ==========================================================================
    common - THEMES
    ========================================================================== */
@@ -634,49 +634,50 @@ section,
 
 
 /* ==========================================================================
-   page - SPEAKERS
+   page - HOME
    ========================================================================== */
 
 /* -------------------------------------------------------------------------- */
-/* styles */
+/* intro */
+#pgHome .intro { padding-left:30px; }
 
-/* imgACU */
-#pgHome .imgACU { 
-	display:block; width:165px; height:60px; margin:35px 0; padding:0; overflow:hidden;
-	background:url(../img/img-acu.png) center center no-repeat; background-size:cover; }
+	/* imgACU */
+	#pgHome .imgACU {
+		display:block; width:165px; height:60px; margin:35px 0; padding:0; overflow:hidden;
+		background:url(../img/img-acu.png) center center no-repeat; background-size:cover; }
 
-/* title */
-#pgHome .title { 
-	color:#fff; font-size:25px; font-weight:300; line-height:1.2em; }
+	/* title */
+	#pgHome .title {
+		color:#fff; font-size:25px; font-weight:300; line-height:1.2em; }
 
-/* subtitle */
-#pgHome .subtitle { 
-	margin-top:20px; color:rgba(255,255,255,0.6); font-size:15px; font-weight:400; line-height:1.5em; }
-#pgHome .subtitle strong { 
-	font-weight:600; }
+	/* subtitle */
+	#pgHome .subtitle {
+		margin-top:20px; color:rgba(255,255,255,0.6); font-size:15px; font-weight:400; line-height:1.5em; }
+	#pgHome .subtitle strong {
+		font-weight:600; }
 
 /* -------------------------------------------------------------------------- */
 /* intro transition */
 
-/* default */
-#pgHome .intro > * { 
-	opacity:0;
-	/*transform*/
-	-webkit-transform:translate(0,-10px);
-	transform:translate(0,-10px);
-	/*transition*/
-	-webkit-transition:all 0.6s ease-out;
-	transition:all 0.6s ease-out; }
+	/* default */
+	#pgHome .intro > * {
+		opacity:0;
+		/*transform*/
+		-webkit-transform:translate(0,-10px);
+		transform:translate(0,-10px);
+		/*transition*/
+		-webkit-transition:all 0.6s ease-out;
+		transition:all 0.6s ease-out; }
 
-/* active */
-#pgHome .intro.active > * {
-	opacity:1;
-	/*transform*/
-	-webkit-transform:translate(0,0);
-	transform:translate(0,0); }
-#pgHome .intro.active > *:nth-child(1) { -webkit-transition-delay:0.2s; transition-delay:0.2s; }
-#pgHome .intro.active > *:nth-child(2) { -webkit-transition-delay:0.25s; transition-delay:0.25s; }
-#pgHome .intro.active > *:nth-child(3) { -webkit-transition-delay:0.3s; transition-delay:0.3s; }
+	/* active */
+	#pgHome .intro.active > * {
+		opacity:1;
+		/*transform*/
+		-webkit-transform:translate(0,0);
+		transform:translate(0,0); }
+	#pgHome .intro.active > *:nth-child(1) { -webkit-transition-delay:0.2s; transition-delay:0.2s; }
+	#pgHome .intro.active > *:nth-child(2) { -webkit-transition-delay:0.25s; transition-delay:0.25s; }
+	#pgHome .intro.active > *:nth-child(3) { -webkit-transition-delay:0.3s; transition-delay:0.3s; }
 
 
 /* ==========================================================================
@@ -684,10 +685,10 @@ section,
    ========================================================================== */
 
 /* custom headings */
-#pgSpeakers .contentView h1,	
-#pgSpeakers .contentView h2, 
-#pgSpeakers .contentView h3, 
-#pgSpeakers .contentView h4, 
+#pgSpeakers .contentView h1,
+#pgSpeakers .contentView h2,
+#pgSpeakers .contentView h3,
+#pgSpeakers .contentView h4,
 #pgSpeakers .contentView h5 { margin:0 0 5px 0; }
 
 
@@ -701,45 +702,47 @@ section,
 
 	/* common */
 	#pgSponsors .logo 					{ display:inline-block; height:auto; }
-	
+
 	/* t1 */
 	#pgSponsors .logo.t1 				{ width:120px; }
 	#pgSponsors .logo.t1:first-child 	{ margin-right:10px; }
 	#pgSponsors .logo.t1:last-child 	{ margin-left:10px; }
-	
+
 	/* t2 */
-	#pgSponsors .logo.t2				{ width:45%; margin:10px 2.0%; }	
-	
+	#pgSponsors .logo.t2				{ width:45%; margin:10px 2.0%; }
+
 	/* t3 */
 	#pgSponsors .logo.t3 				{ width:30%; margin:10px 1.0%; }
-	
-   
+
+
 /* -------------------------------------------------------------------------- */
 /* fw */
-#pgSponsors .fw { 
+#pgSponsors .fw {
 	display:block; width:100%; height:80px; margin:0; padding:0; overflow:hidden;
 	background:#e21737 url(../img/img-fw.png) center center no-repeat; background-size:120px 40px; }
-#pgSponsors .fw.active { 
+#pgSponsors .fw.active {
 	background-color:#c1132e; }
-   
+
 
 /* ==========================================================================
    page - BIO
    ========================================================================== */
-  
+
 /* hide button due to Android scrollTop bug */
 .android #pgBio .btnBox { display:none; }
 
 
 /* -------------------------------------------------------------------------- */
 /* flickableContainer */
-.flickableContainer { position:absolute; top:0; left:0; height:100%; margin:0; padding:0; overflow:hidden; }
-#pgAgenda .flickableContainer { /*width:300%; by JS*/ }
+.flickableContainer {
+	position:absolute; top:0; left:0; height:100%; margin:0; padding:0; overflow:hidden;
+	/*backface-visibility*/-webkit-backface-visibility:hidden; backface-visibility:hidden;
+	/*width:[vp * segNum]; by JS*/ }
 
 	/* flickableItem  */
 	.flickableItem {
 		position:relative; height:100%; margin:0; padding:0; overflow:hidden; float:left;
-		/*width:320px; by JS*/ }
+		/*width:[vp]; by JS*/ }
 
 	/* scroller */
 	.flickableItem > .scroller {
