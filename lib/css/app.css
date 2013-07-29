@@ -702,6 +702,7 @@ section,
 
 	/* common */
 	#pgSponsors .logo 					{ display:inline-block; height:auto; }
+	#pgSponsors .logo > img 			{ display:block; width:100%; height:auto; }
 
 	/* t1 */
 	#pgSponsors .logo.t1 				{ width:120px; }
