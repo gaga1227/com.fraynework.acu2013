@@ -48,6 +48,7 @@
 	<preference name="exit-on-suspend" value="false" /><!-- app will terminate when suspended -->
 	<!-- Perfs: Android -->
 	<preference name="android-installLocation" value="internalOnly" /><!-- install location (internalOnly, auto or preferExternal) -->
+	<preference name="android-minSdkVersion" value="13" /><!-- minSdkVersion -->
 	
 	<!-- Icon: iOS -->
 	<icon src="res/icon/ios/icon-57.png"			gap:platform="ios"			width="57" height="57" />
