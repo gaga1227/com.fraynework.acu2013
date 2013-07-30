@@ -556,6 +556,7 @@ section,
 .scroller { overflow:scroll; background:#fff; }
 /* native scroll for iOS */
 .ios [data-role="scroller"] { -webkit-overflow-scrolling:touch; }
+.android [data-role="scroller"] { overflow:hidden; }
 
 /* custom */
 #pgAgenda .scroller { background:#00549f; }
