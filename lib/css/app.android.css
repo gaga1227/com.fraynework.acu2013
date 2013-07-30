@@ -1,0 +1,7 @@
+/* ==========================================================================
+   Overriding app.css for Android specific workaround:
+   Using fixed position toolbars with overflowing content in body for
+   hardware-Accelerated scrolling
+   ========================================================================== */
+
+.android {  }
