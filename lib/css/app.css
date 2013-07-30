@@ -555,7 +555,6 @@ section,
 /* common */
 .scroller { overflow:scroll; background:#fff; }
 /* native scroll for iOS */
-[data-role="scroller"],
 .ios [data-role="scroller"] { -webkit-overflow-scrolling:touch; }
 
 /* custom */
