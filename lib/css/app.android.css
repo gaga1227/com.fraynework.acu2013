@@ -4,4 +4,6 @@
    hardware-Accelerated scrolling
    ========================================================================== */
 
-.android {  }
+.android .pageHeader{ position: fixed; }
+.android .pageContent{ overflow: scroll; }
+.android .pageContent > .scroller{ position: relative; }
