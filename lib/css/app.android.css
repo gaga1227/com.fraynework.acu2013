@@ -8,6 +8,6 @@
 .android body{ overflow:visible; }  
 .android [data-role="page-container"] { position:relative !important; overflow:visible; } 
 .android .page{ position:relative; overflow: visible; }
-.android .pageHeader{ position: absolute; z-index: 20; background-color:#252525; } 
+.android .pageHeader{ position: fixed; z-index: 20; background-color:#252525; } 
 .android .pageContent{ overflow: hidden; position:relative; z-index: 10; }
 .android .pageContent > .scroller{ position: relative; overflow:auto; }
