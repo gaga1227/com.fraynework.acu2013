@@ -4,10 +4,18 @@
    hardware-Accelerated scrolling
    ========================================================================== */
 
-.android body{ overflow:visible; } 
+/*.android body{ overflow:visible; } 
 .android [data-role="page-container"], .android [data-role="page"] { overflow:visible; } 
 .android .page{ position:relative; overflow: visible; }
 .android .pageHeader{ position: fixed; z-index: 20; background-color:#252525; }
 .android .pageHeader a.headerBtn{ position: fixed; height: 50px; z-index: 20; }
 .android .pageContent{ overflow: hidden; position:relative; z-index: 10; }
-.android .pageContent > .scroller{ position: relative; overflow:hidden; }
+.android .pageContent > .scroller{ position: relative; overflow:hidden; }*/
+
+.android body{ overflow:visible; }  
+.android [data-role="page-container"], .android [data-role="page"] { position:relative; overflow:visible; } 
+.android .page{ position:relative; overflow: visible; }
+.android .pageHeader{ position: fixed; z-index: 20; background-color:#252525; }
+.android .pageHeader a.headerBtn{ position: fixed; height: 50px; z-index: 20; }
+.android .pageContent{ overflow: hidden; position:relative; z-index: 10; }
+.android .pageContent > .scroller{ position: relative; overflow:auto; }
