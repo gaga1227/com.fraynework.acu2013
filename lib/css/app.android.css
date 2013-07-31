@@ -5,20 +5,16 @@
    ========================================================================== */
 
 /*-------common-------*/
-
-/*container*/
-.android body 									{ overflow:scroll; overflow-x:hidden; }
-/*page*/
-.android [data-role="page-container"],
-.android [data-role="page"] 					{ position:relative; top:auto; bottom:auto; left:auto; height:auto; }
-/*pageContent*/
-.android .pageContent 							{ position:relative; top:auto; bottom:auto; left:auto; overflow:hidden; z-index:10; }
-.android .pageContent > .scroller				{ position:relative; top:auto; bottom:auto; left:auto; }
+.android body{ overflow:visible; }
+.android [data-role="page-container"] { position:relative !important; overflow:visible; }
+.android .page{ position:relative; overflow: visible; }
+.android .pageContent{ overflow: hidden; position:relative; z-index: 10; }
+.android .pageContent > .scroller{ position: relative; overflow:auto; }
 
 /*-------agenda page-------*/
-.android #pgAgenda .pageContent					{ height:auto; overflow:hidden; }
-.android #pgAgenda .flickableItem > .scroller 	{ position:relative; top:auto; bottom:auto; left:auto; }
-.android #pgAgenda .flickableContainer 			{ position:relative; top:auto; bottom:auto; left:auto; height:auto; }
+.android #pgAgenda .pageContent{ height:auto; overflow: hidden; }
+.android #pgAgenda .flickableItem > .scroller { position: relative; overflow: visible; }
+.android #pgAgenda .flickableContainer { overflow: visible; }
 
 /*-------home page-------*/
-.android #pgHome .pageContent					{ position:absolute; top:0; left:0; width:100%; height:100%; overflow:hidden; }
+.android #pgHome .pageContent{ height:100%; }
