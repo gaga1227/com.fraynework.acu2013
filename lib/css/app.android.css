@@ -12,10 +12,9 @@
 .android .pageContent > .scroller{ position: relative; overflow:auto; }
 
 /*-------agenda page-------*/
-.android #pgAgenda .pageContent{ height:100%; overflow: visible; }
+.android #pgAgenda .pageContent{ height:auto; overflow: hidden; }
 .android #pgAgenda .flickableItem > .scroller { position: relative; overflow: visible; }
 .android #pgAgenda .flickableContainer { overflow: visible; }
-
 
 /*-------home page-------*/
 .android #pgHome .pageContent{ height:100%; }
