@@ -553,7 +553,7 @@ section,
    ========================================================================== */
 
 /* common */
-.scroller { overflow:scroll; background:#fff; }
+.scroller { overflow:scroll; overflow-x:hidden; background:#fff; }
 /* native scroll for iOS */
 .ios [data-role="scroller"] { -webkit-overflow-scrolling:touch; }
 
